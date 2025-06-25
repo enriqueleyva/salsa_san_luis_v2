@@ -141,7 +141,7 @@
 		</nav>
 
 		<!-- Hero -->
-		<section id="hero" class="d-flex align-items-center">
+		<!-- <section id="hero" class="d-flex align-items-center justify-content-center">
 			<div class="container">
 				<div class="row justify-content-center text-center">
 					<div class="col-lg-8">
@@ -158,11 +158,75 @@
 				</div>
 			</div>
 			<img
-				src="https://salsasanluis.com/wp-content/uploads/2017/11/Better-with-snacks-.png"
+				src="https://salsasanluis.com/wp-content/uploads/2017/10/salsa-san-luis-productos-detersol.png"
 				class="pour"
 				alt="Salsa cayendo"
 			/>
+		</section> -->
+
+		<!-- HERO -->
+		<section id="hero" class="d-flex align-items-center justify-content-center">
+			<div class="hero-content text-center">
+				<h1 class="hero-tagline text-uppercase mb-4">
+					¡Picor que une, <br />
+					Salsa San Luis!
+				</h1>
+				<a href="#productos" class="btn btn-primary-custom btn-lg btn-vibrate">
+					¡Pruébala ya!
+				</a>
+			</div>
+
+			<!-- Imagen de producto / salsa -->
+			<img
+				src="https://salsasanluis.com/wp-content/uploads/2017/10/salsa-san-luis-productos-detersol.png"
+				alt="Salsa cayendo"
+				class="hero-img"
+			/>
 		</section>
+
+		<style>
+			/* HERO: contenedor base */
+			#hero {
+				position: relative; /* clave para posicionar hijos absolutos */
+				height: 80vh;
+				background-color: var(--yellow); /* el amarillo que ya usas */
+				overflow: hidden; /* recorta la imagen si excede */
+			}
+
+			/* Bloque de texto */
+			.hero-content {
+				position: relative; /* lo “eleva” sobre la imagen */
+				z-index: 2; /* por delante */
+				max-width: 750px;
+			}
+
+			/* Imagen centrada detrás */
+			.hero-img {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%); /* centra exactamente */
+				max-width: 90vw; /* o 100% si prefieres */
+				height: auto;
+				z-index: 1; /* por detrás */
+				pointer-events: none; /* evita que bloquee clics */
+			}
+			/* HERO container (ya lo tienes) */
+			#hero {
+				position: relative;
+				overflow: hidden;
+			}
+
+			/* 2) Texto por delante + sombra */
+			.hero-content {
+				position: relative;
+				z-index: 2;
+			}
+			.hero-tagline {
+				text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+				color: #fff;
+			}
+		</style>
 
 		<!-- Productos Destacados -->
 		<section id="productos" class="py-5">
