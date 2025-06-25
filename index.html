@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Salsa San Luis – ¡Échale México a tu botana!</title>
+
+		<!-- Google Fonts -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400;700&family=Anton&family=Nunito+Sans:wght@400;600&family=Roboto+Mono:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+		<!-- Bootstrap Icons (opcional) -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+			rel="stylesheet"
+		/>
+
+		<style>
+			:root {
+				--yellow: #f7c400; /* Amarillo Botanera */
+				--red: #d71920; /* Rojo Valentina  */
+				--black: #000000; /* Negro headlines */
+				--cream: #fff7e5; /* Fondo secciones */
+				--green: #76a04b; /* Verde tomatillo */
+				--gray: #4a4a4a; /* Gris carbón     */
+			}
+
+			body {
+				font-family: "Nunito Sans", sans-serif;
+				background-color: var(--cream);
+				color: var(--gray);
+			}
+
+			h1,
+			h2,
+			h3,
+			h4,
+			h5 {
+				font-family: "Bebas Neue", "Anton", sans-serif;
+				color: var(--black);
+				letter-spacing: 0.5px;
+			}
+
+			/* Navbar */
+			.navbar {
+				background-color: var(--black);
+			}
+
+			/* Hero */
+			#hero {
+				height: 80vh;
+				background-color: var(--yellow);
+				position: relative;
+				overflow: hidden;
+			}
+			#hero img.pour {
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				max-height: 100%;
+				object-fit: cover;
+			}
+			.hero-tagline {
+				font-size: clamp(2rem, 6vw, 6rem);
+				text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+			}
+
+			/* Botones */
+			.btn-primary-custom {
+				color: #fff;
+				background-color: var(--red);
+				border: none;
+			}
+			.btn-primary-custom:hover {
+				background-color: #b51517;
+			}
+			.btn-vibrate:hover {
+				transform: rotate(2deg);
+			}
+
+			/* Tarjetas de producto */
+			.product-card {
+				transition: transform 0.3s;
+			}
+			.product-card:hover {
+				transform: translateY(-6px);
+			}
+
+			/* Footer */
+			footer {
+				background-color: var(--black);
+				color: white;
+				padding: 2rem 0;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+			<div class="container">
+				<a class="navbar-brand mx-auto" href="#">
+					<img src="logo_placeholder.svg" alt="Salsa San Luis" height="40" />
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div
+					class="collapse navbar-collapse justify-content-center"
+					id="navbarNav"
+				>
+					<ul class="navbar-nav mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link text-uppercase" href="#hero">Inicio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-uppercase" href="#productos">Productos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-uppercase" href="#contacto">Contacto</a>
+						</li>
+					</ul>
+				</div>
+				<a
+					href="#comprar"
+					class="btn btn-primary-custom btn-vibrate d-none d-lg-block"
+					>Comprar</a
+				>
+			</div>
+		</nav>
+
+		<!-- Hero -->
+		<section id="hero" class="d-flex align-items-center">
+			<div class="container">
+				<div class="row justify-content-center text-center">
+					<div class="col-lg-8">
+						<h1 class="hero-tagline text-uppercase mb-4">
+							¡Picor que une, <br />
+							Salsa San Luis!
+						</h1>
+						<a
+							href="#productos"
+							class="btn btn-primary-custom btn-lg btn-vibrate"
+							>¡Pruébala ya!</a
+						>
+					</div>
+				</div>
+			</div>
+			<img
+				src="https://salsasanluis.com/wp-content/uploads/2017/11/Better-with-snacks-.png"
+				class="pour"
+				alt="Salsa cayendo"
+			/>
+		</section>
+
+		<!-- Productos Destacados -->
+		<section id="productos" class="py-5">
+			<div class="container">
+				<h2 class="text-center mb-5 text-uppercase">Productos Destacados</h2>
+				<div class="row g-4">
+					<div class="col-md-4">
+						<div class="card product-card h-100 text-center border-0">
+							<img
+								src="https://salsasanluis.com/wp-content/uploads/2017/11/Better-with-snacks-.png"
+								class="card-img-top p-4"
+								alt="Salsa Original"
+							/>
+							<div class="card-body">
+								<h3 class="card-title text-uppercase">
+									Salsa San Luis Original
+								</h3>
+								<p class="card-text">
+									El clásico sabor que lo empezó todo. Perfecta para cada
+									antojo.
+								</p>
+								<a href="#" class="btn btn-primary-custom btn-vibrate"
+									>Ver recetas</a
+								>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card product-card h-100 text-center border-0">
+							<img
+								src="https://salsasanluis.com/wp-content/uploads/2017/11/Better-in-the-party-.png"
+								class="card-img-top p-4"
+								alt="Salsa Picante"
+							/>
+							<div class="card-body">
+								<h3 class="card-title text-uppercase">
+									Salsa San Luis Picante
+								</h3>
+								<p class="card-text">
+									Para los que buscan un nivel extra de picor.
+								</p>
+								<a href="#" class="btn btn-primary-custom btn-vibrate"
+									>Ver recetas</a
+								>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card product-card h-100 text-center border-0">
+							<img
+								src="https://salsasanluis.com/wp-content/uploads/2013/05/El-mejor-sabor-para-tus-botanas.png"
+								class="card-img-top p-4"
+								alt="Salsa Chipotle"
+							/>
+							<div class="card-body">
+								<h3 class="card-title text-uppercase">
+									Salsa San Luis Chipotle
+								</h3>
+								<p class="card-text">
+									Un ahumado irresistible que acompaña a la perfección.
+								</p>
+								<a href="#" class="btn btn-primary-custom btn-vibrate"
+									>Ver recetas</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ============ Fragmento de Historia ============ -->
+		<section
+			id="fragmento-historia"
+			class="py-5 mt-3"
+			style="background-color: #fff7e5"
+		>
+			<div class="container">
+				<div class="row align-items-center g-4">
+					<!-- Imagen vintage -->
+					<div class="col-lg-6">
+						<!-- Sustituye la ruta por tu foto real -->
+						<img
+							src="https://detersol.com/en/mision.png"
+							alt="Foto vintage de la fábrica"
+							class="img-fluid rounded-3 shadow historia-img"
+						/>
+					</div>
+
+					<!-- Texto de historia -->
+					<div class="col-lg-6 historia-text">
+						<h2
+							class="text-uppercase mb-3"
+							style="
+								font-family: 'Bebas Neue', 'Anton', sans-serif;
+								color: #000;
+							"
+						>
+							De la cocina familiar&nbsp;al&nbsp;mundo
+						</h2>
+
+						<p>
+							Corría el año de <strong>1960</strong> en un pequeño pueblo de
+							<strong>San Luis Potosí</strong> cuando
+							<strong>Don Luis</strong> mezcló por primera vez chiles secos, ajo
+							y especias para acompañar las botanas de su mesa dominical. El
+							aroma conquistó a la familia, luego al vecindario y pronto a los
+							mercados locales.
+						</p>
+
+						<p>
+							La receta familiar pasó de mano en mano hasta embotellarse con
+							orgullo mexicano. Cada cápsula de salsa encierra
+							<em>tradición</em>, <em>picor</em> y el deseo de compartir
+							momentos inolvidables en cada bocado.
+						</p>
+
+						<p class="fst-italic">
+							“Una buena salsa no solo pica, <strong>cuenta historias</strong>.”
+							— Don Luis, fundador
+						</p>
+
+						<a href="#historia" class="btn btn-primary-custom btn-vibrate mt-3"
+							>Conoce la historia completa</a
+						>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Historia en cifras -->
+		<section id="historia" class="py-5" style="background-color: var(--yellow)">
+			<div class="container">
+				<h2 class="text-center mb-5 text-uppercase">Historia en cifras</h2>
+				<div class="row text-center gy-4">
+					<div class="col-md-4">
+						<h3 class="display-4 fw-bold" data-count="1960">0</h3>
+						<p>Año de fundación</p>
+					</div>
+					<div class="col-md-4">
+						<h3 class="display-4 fw-bold" data-count="500">0</h3>
+						<p>Millones de botellas vendidas</p>
+					</div>
+					<div class="col-md-4">
+						<h3 class="display-4 fw-bold" data-count="45">0</h3>
+						<p>Países con sabor San Luis</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ============ Sección WOW Factor: Antes / Después ============ -->
+		<section
+			id="wow-antes-despues"
+			class="py-5"
+			style="background-color: var(--cream)"
+		>
+			<div class="container">
+				<h2 class="text-center text-uppercase mb-5">
+					Antes <span style="color: var(--red)">&</span> Después
+				</h2>
+
+				<!-- Contenedor Before / After -->
+				<div
+					class="ba-wrapper position-relative overflow-hidden rounded-3 shadow"
+					style="max-width: 720px; margin: auto"
+				>
+					<!-- Imagen ANTES -->
+					<img
+						src="img/sin salsa.webp"
+						class="w-100 d-block"
+						alt="Papas sin salsa"
+					/>
+
+					<!-- Imagen DESPUÉS -->
+					<img
+						src="img/salsa1.webp"
+						class="w-100 d-block position-absolute top-0 start-0 after-img"
+						alt="Papas con salsa"
+						style="clip-path: inset(0 50% 0 0)"
+					/>
+					<!-- 50 % visible al cargar -->
+
+					<!-- Slider invisible que capta drag -->
+					<input
+						type="range"
+						min="0"
+						max="100"
+						value="50"
+						class="form-range ba-slider"
+						style="
+							position: absolute;
+							top: 0;
+							left: 0;
+							width: 100%;
+							height: 100%;
+							opacity: 0;
+							cursor: ew-resize;
+						"
+					/>
+
+					<!-- Manija -->
+					<div
+						class="ba-handle position-absolute top-0 start-50 translate-middle-x"
+						style="width: 4px; height: 100%; background-color: var(--red)"
+					>
+						<!-- puntito decorativo -->
+						<div
+							style="
+								position: absolute;
+								top: 50%;
+								left: 50%;
+								transform: translate(-50%, -50%);
+								width: 22px;
+								height: 22px;
+								border-radius: 50%;
+								background-color: var(--red);
+								box-shadow: 0 0 0 4px #fff7e5;
+							"
+						></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ========== Recomendaciones de Uso – Mosaico ========== -->
+		<section
+			id="recomendaciones-mosaico"
+			class="py-5"
+			style="background-color: var(--yellow)"
+		>
+			<div class="container">
+				<h2 class="text-center text-uppercase mb-5">¿A qué le echas salsa?</h2>
+
+				<!-- GRID MOSAICO -->
+				<div class="mosaic d-grid gap-3">
+					<!-- Papas (doble alto) -->
+					<div class="mosaic-item" style="grid-row: span 2">
+						<img src="img/salsa1.webp" alt="Papas fritas" />
+						<span class="label">Papas</span>
+					</div>
+
+					<!-- Palomitas -->
+					<div class="mosaic-item">
+						<img src="img/salsa1.webp" alt="Palomitas" />
+						<span class="label">Palomitas</span>
+					</div>
+
+					<!-- Tacos (doble ancho) -->
+					<div class="mosaic-item" style="grid-column: span 2">
+						<img src="img/salsa1.webp" alt="Tacos" />
+						<span class="label">Tacos</span>
+					</div>
+
+					<!-- Pizza -->
+					<div class="mosaic-item">
+						<img src="img/salsa1.webp" alt="Pizza & Snacks" />
+						<span class="label">Pizza & Snacks</span>
+					</div>
+
+					<!-- Elote -->
+					<div class="mosaic-item">
+						<img src="img/salsa1.webp" alt="Elote" />
+						<span class="label">Elote</span>
+					</div>
+					<!-- Elote -->
+					<div class="mosaic-item">
+						<img src="img/salsa1.webp" alt="Elote" />
+						<span class="label">Elote</span>
+					</div>
+					<!-- Elote -->
+					<div class="mosaic-item" style="grid-column: span 2">
+						<img src="img/salsa1.webp" alt="Elote" />
+						<span class="label">Elote</span>
+					</div>
+					<!-- Elote -->
+					<div class="mosaic-item" style="grid-column: span 2">
+						<img src="img/salsa1.webp" alt="Elote" />
+						<span class="label">Elote</span>
+					</div>
+					<!-- Elote -->
+					<div class="mosaic-item" style="grid-column: span 2">
+						<img src="img/salsa1.webp" alt="Elote" />
+						<span class="label">Elote</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ========== Estilos específicos del mosaico ========== -->
+		<style>
+			/* Contenedor grid: columnas flexibles y filas de 160 px */
+			.mosaic {
+				grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+				grid-auto-rows: 160px;
+			}
+			/* Ítem base */
+			.mosaic-item {
+				position: relative;
+				overflow: hidden;
+				border-radius: 0.75rem;
+			}
+			.mosaic-item img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				transition: transform 0.4s;
+			}
+			/* Zoom ligero en hover */
+			.mosaic-item:hover img {
+				transform: scale(1.1);
+			}
+			/* Etiqueta */
+			.mosaic-item .label {
+				position: absolute;
+				bottom: 8px;
+				left: 8px;
+				background: rgba(0, 0, 0, 0.55);
+				color: #fff;
+				font-family: "Bebas Neue", "Anton", sans-serif;
+				padding: 4px 10px;
+				border-radius: 4px;
+				font-size: 1rem;
+				letter-spacing: 0.5px;
+				text-transform: uppercase;
+			}
+		</style>
+
+		<!-- ========== Dónde comprar ========== -->
+		<section
+			id="donde-comprar"
+			class="py-5"
+			style="background-color: var(--cream)"
+		>
+			<div class="container">
+				<h2 class="text-center text-uppercase mb-5">Disponible en:</h2>
+
+				<!-- Grid de marcas -->
+				<div class="row justify-content-center g-4 brand-grid">
+					<!-- Walmart -->
+					<div class="col-4 col-md-2 text-center brand-item">
+						<a href="https://www.walmart.com.mx" target="_blank" rel="noopener">
+							<img
+								src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Walmart_logo.svg/1280px-Walmart_logo.svg.png"
+								alt="Walmart"
+								class="img-fluid"
+							/>
+						</a>
+					</div>
+
+					<!-- Bodega Aurrera -->
+					<div class="col-4 col-md-2 text-center brand-item">
+						<a
+							href="https://www.bodegaaurrera.com.mx"
+							target="_blank"
+							rel="noopener"
+						>
+							<img
+								src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSABVWEysQ1Yog5B8s1hoOd1KNfbst9QuMHqw&s"
+								alt="Bodega Aurrera"
+								class="img-fluid"
+							/>
+						</a>
+					</div>
+
+					<!-- Soriana -->
+					<div class="col-4 col-md-2 text-center brand-item">
+						<a href="https://www.soriana.com" target="_blank" rel="noopener">
+							<img
+								src="https://upload.wikimedia.org/wikipedia/commons/6/61/LogoSorianaSVG.svg"
+								alt="Soriana"
+								class="img-fluid"
+							/>
+						</a>
+					</div>
+
+					<!-- Chedraui -->
+					<div class="col-4 col-md-2 text-center brand-item">
+						<a
+							href="https://www.chedraui.com.mx"
+							target="_blank"
+							rel="noopener"
+						>
+							<img
+								src="https://upload.wikimedia.org/wikipedia/commons/3/38/Logo_de_Chedraui_%28texto%29.svg"
+								alt="Chedraui"
+								class="img-fluid"
+							/>
+						</a>
+					</div>
+
+					<!-- OXXO -->
+					<div class="col-4 col-md-2 text-center brand-item">
+						<a href="https://www.oxxo.com" target="_blank" rel="noopener">
+							<img
+								src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Oxxo_Logo.svg/2560px-Oxxo_Logo.svg.png"
+								alt="OXXO"
+								class="img-fluid"
+							/>
+						</a>
+					</div>
+
+					<!-- Amazon -->
+					<div class="col-4 col-md-2 text-center brand-item">
+						<a href="https://www.amazon.com.mx" target="_blank" rel="noopener">
+							<img
+								src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/3B_logo.svg/2171px-3B_logo.svg.png"
+								alt="Amazon"
+								class="img-fluid"
+							/>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ========== Estilos de marcas ========== -->
+		<style>
+			.brand-item img {
+				filter: grayscale(100%);
+				transition: filter 0.3s, transform 0.3s;
+				max-height: 60px; /* ajusta al tamaño deseado */
+			}
+			.brand-item:hover img {
+				filter: grayscale(0);
+				transform: scale(1.05);
+			}
+		</style>
+
+		<!-- ========== Sección Contacto ========== -->
+		<section id="contacto" class="py-5" style="background-color: var(--yellow)">
+			<div class="container">
+				<h2 class="text-center text-uppercase mb-4">Contáctanos</h2>
+
+				<div class="row justify-content-center">
+					<div class="col-lg-8">
+						<!-- Tarjeta blanca para el formulario -->
+						<div class="card shadow-sm border-0">
+							<div class="card-body p-4">
+								<form id="contactForm" class="needs-validation" novalidate>
+									<!-- Nombre -->
+									<div class="mb-3">
+										<label for="name" class="form-label text-uppercase"
+											>Nombre</label
+										>
+										<input
+											type="text"
+											class="form-control"
+											id="name"
+											name="name"
+											required
+										/>
+										<div class="invalid-feedback">
+											Por favor escribe tu nombre.
+										</div>
+									</div>
+
+									<!-- Email -->
+									<div class="mb-3">
+										<label for="email" class="form-label text-uppercase"
+											>Correo electrónico</label
+										>
+										<input
+											type="email"
+											class="form-control"
+											id="email"
+											name="email"
+											required
+										/>
+										<div class="invalid-feedback">
+											Escribe un correo electrónico válido.
+										</div>
+									</div>
+
+									<!-- Teléfono (opcional) -->
+									<div class="mb-3">
+										<label for="phone" class="form-label text-uppercase"
+											>Teléfono (opcional)</label
+										>
+										<input
+											type="tel"
+											class="form-control"
+											id="phone"
+											name="phone"
+											pattern="\\d{7,15}"
+										/>
+										<div class="invalid-feedback">Número no válido.</div>
+									</div>
+
+									<!-- Mensaje -->
+									<div class="mb-3">
+										<label for="message" class="form-label text-uppercase"
+											>Mensaje</label
+										>
+										<textarea
+											class="form-control"
+											id="message"
+											name="message"
+											rows="5"
+											required
+										></textarea>
+										<div class="invalid-feedback">Escribe tu mensaje.</div>
+									</div>
+
+									<!-- Botón -->
+									<div class="d-grid">
+										<button
+											class="btn btn-primary-custom btn-vibrate"
+											type="submit"
+										>
+											Enviar mensaje
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ========== Estilos adicionales (opcional) ========== -->
+		<style>
+			/* Bordes sutiles y foco visible */
+			#contactForm .form-control:focus {
+				border-color: var(--red);
+				box-shadow: 0 0 0 0.25rem rgba(215, 25, 32, 0.25);
+			}
+		</style>
+
+		<!-- ========== Lógica Bootstrap + GSAP ========== -->
+		<script>
+			// Validación Bootstrap
+			(() => {
+				"use strict";
+				const form = document.getElementById("contactForm");
+				form.addEventListener(
+					"submit",
+					(event) => {
+						if (!form.checkValidity()) {
+							event.preventDefault();
+							event.stopPropagation();
+						}
+						form.classList.add("was-validated");
+					},
+					false
+				);
+			})();
+
+			// Animación de aparición
+			gsap.registerPlugin(ScrollTrigger);
+			gsap.from("#contacto .card", {
+				scrollTrigger: { trigger: "#contacto", start: "top 80%" },
+				y: 40,
+				opacity: 0,
+				duration: 0.8,
+				ease: "power2.out",
+			});
+		</script>
+
+		<!-- ========== Footer ========== -->
+		<footer
+			class="pt-5 pb-4"
+			style="background-color: var(--black); color: #fff"
+		>
+			<div class="container">
+				<div class="row gy-4">
+					<!-- Logo -->
+					<div class="col-12 col-md-3 text-center text-md-start">
+						<img
+							src="logo_placeholder_white.svg"
+							alt="Salsa San Luis"
+							height="50"
+						/>
+						<p class="mt-3 small">
+							&copy; 2025 Salsa San Luis. Todos los derechos reservados.
+						</p>
+					</div>
+
+					<!-- Links legales -->
+					<div class="col-6 col-md-3">
+						<h6 class="text-uppercase mb-3">Legal</h6>
+						<ul class="list-unstyled small">
+							<li>
+								<a href="/aviso-de-privacidad" class="footer-link"
+									>Aviso de privacidad</a
+								>
+							</li>
+							<li>
+								<a href="/terminos" class="footer-link"
+									>Términos y condiciones</a
+								>
+							</li>
+							<li>
+								<a href="/politica-cookies" class="footer-link"
+									>Política de cookies</a
+								>
+							</li>
+						</ul>
+					</div>
+
+					<!-- Contacto -->
+					<div class="col-6 col-md-3">
+						<h6 class="text-uppercase mb-3">Contacto</h6>
+						<ul class="list-unstyled small">
+							<li><i class="bi bi-envelope me-2"></i>hola@salsasanluis.com</li>
+							<li><i class="bi bi-telephone me-2"></i>+52 444 123 4567</li>
+							<li><i class="bi bi-geo-alt me-2"></i>San Luis Potosí, México</li>
+						</ul>
+					</div>
+
+					<!-- Redes sociales -->
+					<div class="col-12 col-md-3 text-center text-md-start">
+						<h6 class="text-uppercase mb-3">Síguenos</h6>
+						<a
+							href="https://www.instagram.com"
+							class="social-icon me-3"
+							target="_blank"
+							rel="noopener"
+							><i class="bi bi-instagram"></i
+						></a>
+						<a
+							href="https://www.facebook.com"
+							class="social-icon me-3"
+							target="_blank"
+							rel="noopener"
+							><i class="bi bi-facebook"></i
+						></a>
+						<a
+							href="https://www.tiktok.com"
+							class="social-icon"
+							target="_blank"
+							rel="noopener"
+							><i class="bi bi-tiktok"></i
+						></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- ========== Estilos Footer ========== -->
+		<style>
+			.footer-link {
+				color: #fff;
+				text-decoration: none;
+				transition: color 0.2s;
+			}
+			.footer-link:hover {
+				color: var(--yellow);
+			}
+			.social-icon {
+				font-size: 1.4rem;
+				color: #fff;
+				transition: color 0.2s;
+			}
+			.social-icon:hover {
+				color: var(--red);
+			}
+		</style>
+
+		<!-- ========== Animación GSAP opcional ========== -->
+		<script>
+			gsap.registerPlugin(ScrollTrigger);
+			gsap.from("footer .row > div", {
+				scrollTrigger: { trigger: "footer", start: "top 80%" },
+				y: 30,
+				opacity: 0,
+				duration: 0.8,
+				stagger: 0.15,
+				ease: "power2.out",
+			});
+		</script>
+
+		<!-- Bootstrap JS -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+		<!-- GSAP -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+				/* Micro‑animación GSAP al pasar el ratón sobre los botones */
+				document.querySelectorAll(".btn-vibrate").forEach((btn) => {
+					btn.addEventListener("mouseenter", () => {
+						gsap.fromTo(
+							btn,
+							{ rotation: -2 },
+							{
+								rotation: 2,
+								duration: 0.1,
+								yoyo: true,
+								repeat: 5,
+								ease: "sine.inOut",
+							}
+						);
+					});
+				});
+
+				/* Scroll reveal para tarjetas de producto */
+				gsap.from(".product-card", {
+					scrollTrigger: {
+						trigger: "#productos",
+						start: "top 80%",
+					},
+					y: 80,
+					opacity: 0,
+					duration: 0.8,
+					stagger: 0.2,
+				});
+
+				/* Contadores animados en sección Historia */
+				gsap.utils.toArray("[data-count]").forEach((el) => {
+					const final = parseInt(el.getAttribute("data-count"));
+					gsap.fromTo(
+						el,
+						{ innerText: 0 },
+						{
+							innerText: final,
+							duration: 2,
+							ease: "power1.in",
+							snap: { innerText: 1 },
+							scrollTrigger: {
+								trigger: "#historia",
+								start: "top 80%",
+							},
+						}
+					);
+				});
+			});
+		</script>
+		<script>
+			// Animar la imagen: aparece desde la izquierda con leve zoom-in
+			gsap.from(".historia-img", {
+				scrollTrigger: {
+					trigger: "#fragmento-historia",
+					start: "top 80%",
+				},
+				x: -80,
+				scale: 0.9,
+				opacity: 0,
+				duration: 1,
+				ease: "power2.out",
+			});
+
+			// Animar el bloque de texto: se desliza desde abajo
+			gsap.from(".historia-text", {
+				scrollTrigger: {
+					trigger: "#fragmento-historia",
+					start: "top 80%",
+				},
+				y: 60,
+				opacity: 0,
+				duration: 1,
+				delay: 0.2,
+				ease: "power2.out",
+			});
+		</script>
+		<!-- ============ Lógica GSAP ============ -->
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+				const wrapper = document.querySelector(".ba-wrapper");
+				const slider = wrapper.querySelector(".ba-slider");
+				const afterImg = wrapper.querySelector(".after-img");
+				const handle = wrapper.querySelector(".ba-handle");
+
+				// Función para actualizar clip y manija
+				const updateSplit = (valPct) => {
+					afterImg.style.clipPath = `inset(0 ${100 - valPct}% 0 0)`;
+					handle.style.left = `${valPct}%`;
+				};
+
+				// Inicial
+				updateSplit(50);
+
+				// Drag / input
+				slider.addEventListener("input", (e) => updateSplit(e.target.value));
+
+				// GSAP: al salir del viewport regresa suave al centro
+				gsap.registerPlugin(ScrollTrigger);
+				ScrollTrigger.create({
+					trigger: wrapper,
+					start: "bottom bottom", // cuando deja de ser visible
+					onLeave: () =>
+						gsap.to(slider, {
+							value: 50,
+							duration: 0.6,
+							onUpdate: () => updateSplit(slider.value),
+						}),
+					onEnterBack: (self) =>
+						gsap.to(slider, {
+							value: 50,
+							duration: 0.6,
+							onUpdate: () => updateSplit(slider.value),
+						}),
+				});
+			});
+		</script>
+
+		<!-- ============= Animación GSAP ============= -->
+		<script>
+			// Efecto fade-up escalonado para cada “uso-card”
+			gsap.from(".uso-card", {
+				scrollTrigger: {
+					trigger: "#recomendaciones",
+					start: "top 80%",
+				},
+				y: 40,
+				opacity: 0,
+				duration: 0.8,
+				stagger: 0.2,
+				ease: "power2.out",
+			});
+		</script>
+		<!-- ========== Animación GSAP (entrada escalonada) ========== -->
+		<script>
+			gsap.registerPlugin(ScrollTrigger);
+			gsap.from(".mosaic-item", {
+				scrollTrigger: {
+					trigger: "#recomendaciones-mosaico",
+					start: "top 80%",
+				},
+				y: 40,
+				opacity: 0,
+				duration: 0.8,
+				stagger: 0.1,
+				ease: "power2.out",
+			});
+		</script>
+
+		<!-- ========== Animación GSAP ========== -->
+		<script>
+			gsap.registerPlugin(ScrollTrigger);
+			gsap.from(".brand-item", {
+				scrollTrigger: { trigger: "#donde-comprar", start: "top 80%" },
+				y: 30,
+				opacity: 0,
+				duration: 0.6,
+				stagger: 0.1,
+				ease: "power1.out",
+			});
+		</script>
+	</body>
+</html>
