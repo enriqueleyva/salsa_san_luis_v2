@@ -37,9 +37,9 @@ h5 {
 
 /* Hero */
 #hero {
+    position: relative;
     height: 80vh;
     background-color: var(--yellow);
-    position: relative;
     overflow: hidden;
 }
 
@@ -53,7 +53,8 @@ h5 {
 
 .hero-tagline {
     font-size: clamp(2rem, 6vw, 6rem);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    color: #fff;
 }
 
 /* Botones */
@@ -65,6 +66,7 @@ h5 {
 
 .btn-primary-custom:hover {
     background-color: #b51517;
+    color: black;
 }
 
 /* .btn-vibrate:hover {
@@ -126,22 +128,12 @@ footer {
 }
 
 /* HERO: contenedor base */
-#hero {
-    position: relative;
-    /* clave para posicionar hijos absolutos */
-    height: 80vh;
-    background-color: var(--yellow);
-    /* el amarillo que ya usas */
-    overflow: hidden;
-    /* recorta la imagen si excede */
-}
+/* Merged into main #hero block above */
 
 /* Bloque de texto */
 .hero-content {
     position: relative;
-    /* lo “eleva” sobre la imagen */
     z-index: 2;
-    /* por delante */
     max-width: 750px;
 }
 
@@ -222,21 +214,10 @@ footer {
 
 
 /* HERO container (ya lo tienes) */
-#hero {
-    position: relative;
-    overflow: hidden;
-}
+/* Merged into main #hero block above */
 
 /* 2) Texto por delante + sombra */
-.hero-content {
-    position: relative;
-    z-index: 2;
-}
-
-.hero-tagline {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
-    color: #fff;
-}
+/* Merged into main .hero-content and .hero-tagline blocks above */
 
 /* Oculta flechas en pantallas muy pequeñas si lo deseas */
 @media (max-width: 575.98px) {
@@ -265,7 +246,7 @@ footer {
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link:focus {
-    color: var(--red) !important;
+    color: var(--black) !important;
     /* rojo Valentina en hover/focus */
 }
 
